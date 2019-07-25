@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Semester1Activity">
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="90dp"
+        android:text="Add Data" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button_add"
+        android:layout_marginRight="30dp"
+        android:text="View All" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:text="Update" />
+
+
+    <TextView
+        android:id="@+id/textView_book"
+        android:layout_width="94dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:text="Book"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_sem"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:layout_alignTop="@+id/textView_book"
+        android:layout_alignEnd="@+id/button_viewAll"
+        android:hint="bkName"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_viewAll"
+        android:layout_marginLeft="-10dp"
+        android:text="DELETE" />
+
+    <TextView
+        android:id="@+id/textView_page"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="182dp"
+        android:text="PageNo"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_module1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_page"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:hint="PageNo"
+        android:inputType="textPersonName|number" />
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="266dp"
+        android:text="ID"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_module1"
+        android:layout_alignTop="@+id/textView_id"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName|number" />
+
+
+</RelativeLayout>

@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Semester4Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:text="Semester"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:text="Marks"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_semester"
+        android:layout_width="235dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:hint="sem1..6"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="233dp"
+        android:layout_height="31dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:hint="studentName"
+        android:inputType="text|textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_Marks"
+        android:layout_width="229dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/editText_semester"
+        android:layout_alignTop="@+id/textView3"
+        android:hint="AverageMarks" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="90dp"
+        android:text="Add Data" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button_add"
+        android:layout_marginRight="30dp"
+        android:text="View All" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:text="Update" />
+
+
+    <TextView
+        android:id="@+id/textView_book"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginTop="180dp"
+        android:text="id"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/textView_book"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="237dp"
+        android:text="CATS"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_cats"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginRight="61dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="catMarks"
+        android:inputType="textPersonName|number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="314dp"
+        android:text="PRAC"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_prac"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/editText_cats"
+        android:layout_marginLeft="-13dp"
+        android:ems="10"
+        android:hint="pracMarks"
+        android:inputType="textPersonName|number" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="285dp"
+        android:text="Project"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:hint="projectMarks"
+        android:inputType="textPersonName|number" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="69dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="214dp"
+        android:layout_marginLeft="0dp"
+        android:text="Exam"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_exam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:hint="finalExamMarks"
+        android:inputType="textPersonName|number" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_viewAll"
+        android:layout_marginLeft="-10dp"
+        android:text="DELETE" />
+
+    <TextView
+        android:id="@+id/textView_page"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="145dp"
+        android:text="Lecturer"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <EditText
+        android:id="@+id/editText_module1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView_page"
+        android:layout_marginRight="38dp"
+        android:ems="10"
+        android:hint="lecName"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
